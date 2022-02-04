@@ -1,0 +1,43 @@
+GET http://localhost:3001/api/projects/
+Content-Type: application/json
+
+
+####################### 
+
+GET http://localhost:3001/api/projects/technos
+Content-Type: application/json
+
+
+####################### 
+
+POST  http://localhost:3001/api/projects/technos
+Content-Type: application/json
+
+{
+    "name": "html"
+}
+
+####################### 
+
+POST  http://localhost:3001/api/projects/
+Content-Type: application/json
+
+{
+    "name": "Janken",
+    "screen": "https://i.postimg.cc/xkWwrdzr/janken.png",
+    "link": "https://github.com/Neruso973/Game",
+    "github": "https://github.com/Neruso973/Game",
+    "description": "Jeu du pierre feuille sciseaux contre l'ordi",
+    "technos": ["nojbve", "ozbzcec"]
+}
+
+####################### 
+
+POST  http://localhost:3001/api/projects/1
+Content-Type: application/json
+
+{
+    "techno_id": 1
+}
+
+####################### 

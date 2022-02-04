@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  /* background-color: #47607c; */
+  background-color: #041554;
+}
+.App {
+  /* background-color: #a38f8f; */
+  background-color: #fff;
+  /* background-image: url("http://another-road.fr/assets/img/bg.jpg"); */
+}
+
+.parent:hover > .child {
+  visibility: visible;
+}
