@@ -16,9 +16,11 @@ import Cv from "./components/Pages/Cv";
 import Footer from "./components/Structure/Footer";
 import Home from "./components/Pages/Home";
 import Admin from "./components/admin/Admin";
+import AdminContextProvider from "./context/AdminContextProvider";
 
 function App() {
   return (
+    <AdminContextProvider>
     <Router>
       <ToastContainer />
       <div className="App flex">
@@ -38,6 +40,7 @@ function App() {
         </div>
       </div>
     </Router>
+    </AdminContextProvider>
   );
 }
 

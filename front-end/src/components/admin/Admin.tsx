@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 
-
+import AdminContext from "../../context/AdminContext";
 import { fetchNewProject, fetchTechnos, fetchAdmin } from "../../services/api";
 import AdminAuth from "./AdminAuth";
 import NewProject from "./NewProject";
@@ -8,8 +8,8 @@ import NewProject from "./NewProject";
 function Admin() {
   const [technos, setTechnos] = useState<string[]>();
   const [isLoading, setIsLoading] = useState<Boolean>(true);
-  const [isAuth, setIsAuth] = useState<Boolean>(false);
-  // const { isAuth, setIsAuth } = useContext(AdminContext);
+  // const [isAuth, setIsAuth] = useState<Boolean>(false);
+  const { isAuth, setIsAuth } = useContext(AdminContext);
 
 
   const technosList = async () => {
