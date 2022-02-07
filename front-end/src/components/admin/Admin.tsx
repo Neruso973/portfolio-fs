@@ -8,7 +8,6 @@ import NewProject from "./NewProject";
 function Admin() {
   const [technos, setTechnos] = useState<string[]>();
   const [isLoading, setIsLoading] = useState<Boolean>(true);
-  // const [isAuth, setIsAuth] = useState<Boolean>(false);
   const { isAuth, setIsAuth } = useContext(AdminContext);
 
 

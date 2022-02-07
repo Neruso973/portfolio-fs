@@ -135,7 +135,6 @@ function About() {
                       d="M9 5l7 7-7 7"
                     />
                   </svg>
-                  <p>Niveau: Développeur Junior</p>
                 </li>
                 <li className="flex space-x-3 mt-4">
                   <svg

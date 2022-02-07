@@ -41,8 +41,8 @@ function NewProject({ isLoading, technos, fetchNewProject }: Props) {
   };
 
   return (
-    <div className="border border-black">
-      <h2>Ajouter un nouveau projet</h2>
+    <div className="border border-black  min-h-[54rem]  w-[30rem] my-8 ml-8 rounded-md shadow-black shadow">
+      <h2 className="text-2xl ml-[7rem]">Ajouter un nouveau projet</h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="text-black flex flex-col w-[50%]"
@@ -53,7 +53,7 @@ function NewProject({ isLoading, technos, fetchNewProject }: Props) {
           placeholder="name"
           type="text"
           id="name"
-          className="mt-8 ml-12"
+          className="mt-8 ml-12 border border-black rounded-md"
         />
         {errors.name && <div className="error">enter a project name</div>}
         <label htmlFor="screen" />
@@ -62,7 +62,7 @@ function NewProject({ isLoading, technos, fetchNewProject }: Props) {
           placeholder="screen"
           type="text"
           id="screen"
-          className="mt-8 ml-12"
+          className="mt-8 ml-12 border border-black rounded-md"
         />
         {errors.screen && <div className="error">enter a screen url</div>}
         <label htmlFor="link" />
@@ -71,7 +71,7 @@ function NewProject({ isLoading, technos, fetchNewProject }: Props) {
           placeholder="projet link"
           type="text"
           id="link"
-          className="mt-8 ml-12"
+          className="mt-8 ml-12 border border-black rounded-md"
         />
         <label htmlFor="github" />
         <input
@@ -79,7 +79,7 @@ function NewProject({ isLoading, technos, fetchNewProject }: Props) {
           placeholder="github"
           type="text"
           id="github"
-          className="mt-8 ml-12"
+          className="mt-8 ml-12 border border-black rounded-md"
         />
         <label htmlFor="description" />
         <input
@@ -87,9 +87,9 @@ function NewProject({ isLoading, technos, fetchNewProject }: Props) {
           placeholder="description"
           type="text"
           id="description"
-          className="mt-8 ml-12"
+          className="my-8 ml-12 border border-black rounded-md"
         />
-        <div className="flex flex-wrap w-[50%] h-16">
+        <div className="flex flex-wrap w-[100%] h-16">
           {!isLoading ? (
             technos &&
             technos.map((techno: any) => {
@@ -111,7 +111,7 @@ function NewProject({ isLoading, technos, fetchNewProject }: Props) {
             <p>chargement en cours</p>
           )}
         </div>
-        <button type="submit" className="">
+        <button type="submit" className="my-24 ml-[20rem]">
           Sauvegarder
         </button>
       </form>
