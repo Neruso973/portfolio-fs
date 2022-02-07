@@ -11,7 +11,7 @@ function FlippedCard({ isFlipped, handleIsFlipped }: Props) {
   return (
           <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
             <div className="bg-white  min-h-96 border border-black my-8 ml-8 rounded-md shadow-black shadow">
-                <h2 className="ml-[38%]">Competences Front-end</h2>
+                <h2 className="text-center text-2xl">Competences Front-end</h2>
               <div className="flex flex-wrap">
                 {front.map((item) => (
                   <img
@@ -25,8 +25,8 @@ function FlippedCard({ isFlipped, handleIsFlipped }: Props) {
                 Back-end
               </button>
             </div>
-            <div className="bg-white max-h-96 border border-black my-8 ml-8 truncate">
-                <h2 className="ml-[38%]">Competences Back-end</h2>
+            <div className="bg-white max-h-96 border border-black my-8 ml-8 truncate rounded-md shadow-black shadow">
+                <h2 className="text-center text-2xl">Competences Back-end</h2>
                 <div className="flex flex-wrap ">
                   {back.map((item) => (
                    <img

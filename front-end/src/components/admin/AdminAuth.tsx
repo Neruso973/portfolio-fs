@@ -29,8 +29,8 @@ function AdminAuth({ fetchAdmin, setIsAuth }: Props) {
     }
   };
   return (
-    <div className="border border-black w-[40%] ml-[30%] mt-[20%] ">
-      <h2 className="text-2xl ml-[9rem] text-[#041554] underlin">Authentification</h2>
+    <div className="border border-black w-[40%] ml-[30%] mt-[20%] rounded-md shadow shadow-black">
+      <h2 className="text-2xl text-center text-[#041554] underlin">Authentification</h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="text-black flex flex-col w-[80%] ml-[4%]"
