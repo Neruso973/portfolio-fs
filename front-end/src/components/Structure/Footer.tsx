@@ -7,8 +7,8 @@ function Footer() {
       <footer className="flex justify-around">
         <div className="flex place-content-center">
           <p className="mt-8">
-            Site web designé et réalisé avec React-TS / Tailwind par <Link to="/admin-dashboard"> Nelson
-            NTEPP</Link>
+            Site web designé et réalisé avec React-TS / Tailwind par Nelson
+            NTEPP
           </p>
           <a href="https://github.com/Neruso973/portefolio" target="_blank">
             <svg

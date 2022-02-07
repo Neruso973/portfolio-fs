@@ -26,7 +26,7 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${showLinks ? "showNav" : "hideNav"}`}>
-      <Link to="/">
+      <Link to="/admin-dashboard">
         <img
           src={!isHover ? logo : logoRevert}
           alt="logo de Nelson"
