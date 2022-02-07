@@ -30,7 +30,7 @@ function AdminAuth({ fetchAdmin, setIsAuth }: Props) {
   };
   return (
     <div className="border border-black w-[40%] ml-[30%] mt-[20%] rounded-md shadow shadow-black">
-      <h2 className="text-2xl text-center text-[#041554] underlin">Authentification</h2>
+      <h2 className="text-2xl text-center text-[#041554] underline">Admin Authentification</h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="text-black flex flex-col w-[80%] ml-[4%]"
@@ -53,7 +53,7 @@ function AdminAuth({ fetchAdmin, setIsAuth }: Props) {
           className="mt-8 ml-12"
         />
         {errors.clearPassword && <div className="error">enter Admin password</div>}
-        <button type="submit" className="my-12 ml-[10rem] border border-[#041554] w-[20%]">
+        <button type="submit" className="my-12 ml-[12rem] border border-[#041554] w-[20%]">
           Login
         </button>
       </form>
