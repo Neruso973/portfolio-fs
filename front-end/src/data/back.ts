@@ -24,10 +24,5 @@ export const back = [
         logo: mysql,
         className: 'h-20 w-40 m-2 mt-8 mx-4',
         alt: "mysql logo"
-    },
-    {
-        logo: firebase,
-        className: 'w-20 m-2 pb-8 mx-4',
-        alt: "firebase logo"
-    },
+    }
 ]
